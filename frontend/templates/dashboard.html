@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Recovery Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Disaster Recovery Automation Dashboard</h1>
+        
+        <div class="status-section">
+            <h2>Database Cluster Status</h2>
+            <div id="cluster-status" class="status-grid"></div>
+        </div>
+        
+        <div class="metrics-section">
+            <h2>Failover Metrics (Last 24 Hours)</h2>
+            <canvas id="failoverChart"></canvas>
+        </div>
+        
+        <div class="actions-section">
+            <h2>Recovery Actions</h2>
+            <button id="manualFailover" class="action-button">Initiate Manual Failover</button>
+            <button id="testRecovery" class="action-button">Test Recovery Procedure</button>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
